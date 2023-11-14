@@ -1,31 +1,10 @@
-/*
- * Copyright (c) 2023 Marketify
- * Author: Marketify
- * This file is made for CURRENT TEMPLATE
-*/
+
 
 /*------------------------------------------------------------------*/
 /*  NAV ANCHOR(ONE PAGE NAV PLUGIN)
 /*------------------------------------------------------------------*/
 
-/*
- * jQuery One Page Nav Plugin
- * http://github.com/davist11/jQuery-One-Page-Nav
- *
- * Copyright (c) 2010 Trevor Davis (http://trevordavis.net)
- * Dual licensed under the MIT and GPL licenses.
- * Uses the same license as jQuery, see:
- * http://jquery.org/license
- *
- * @version 3.0.0
- *
- * Example usage:
- * $('#nav').onePageNav({
- *   currentClass: 'current',
- *   changeHash: false,
- *   scrollSpeed: 750
- * });
- */
+
 
 ;(function($, window, document, undefined){
 
