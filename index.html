@@ -311,16 +311,16 @@ Precious Osazenaye is a  Frontend developer highly skilled at design systems
 </div>
 <div class="right">
 <div class="fields">
-<form action="" method="post" class="contact_form" id="contact_form">
-<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+<form onsubmit="sendEmail(); reset(); return false;"  >
+<!-- <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div> -->
 <div class="empty_notice"><span>Please Fill Required Fields</span></div>
 <div class="first">
 <ul>
 <li>
-<input id="name" type="text" placeholder="Enter your name" autocomplete="off">
+<input id="name" type="text" placeholder="Enter your name" autocomplete="off" required>
 </li>
 <li>
-<input id="email" type="text" placeholder="Your email" autocomplete="off">
+<input id="email" type="text" placeholder="Your email" autocomplete="off" required>
 </li>
 </ul>
 </div>
@@ -328,10 +328,10 @@ Precious Osazenaye is a  Frontend developer highly skilled at design systems
 <textarea id="message" placeholder="Hi, I think we need a frontend developer for our products at Company X. How soon can you hop on to discuss this?
 "></textarea>
 </div>
-<div class="elisc_tm_button">
-<a id="send_message" href="#" style="outline: solid 1px #130f49e2; 
-background-color: #d3f4eceb;" class="different">Shoot <span><img class="svg" src="img/svg/rightArrow.svg" alt /></span> </a>
-</div>
+<button type="submit " style="
+background-color: #d3f4eceb; padding: 15px 35px;border-radius: 5px;" class="different">
+Shoot <span><img class="svg" src="img/svg/rightArrow.svg" alt /></span> 
+</button>
 
 </form>
 </div>
@@ -369,8 +369,28 @@ background-color: #d3f4eceb;" class="different">Shoot <span><img class="svg" src
 
 </div>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    SecureToken:" 1a2ea7af-d18b-4025-9376-1acdba7ef809",
+    // Host : "smtp.elasticemail.com",
+    // Username : "preciousosazenaye96@gmail.com",
+    // Password : "DAE909F2E5D273C8F0F0AE1C275A41CE4B1A",
+    To : 'preciousosazenaye96@gmail.com',
+    From : document.getElemementById("email").value ,
+    Subject : "New Contact form message from my website",
+    Body : "Name"= document.getElementById("name").value
+    + "<br> Email:"+ document.getElementById("email").value
+    + "<br> Message:"+ document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully")
+);
+    }
+</script>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<!-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+<script src="js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>

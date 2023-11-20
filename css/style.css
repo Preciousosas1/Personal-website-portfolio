@@ -956,7 +956,7 @@ body::-webkit-scrollbar-thumb{
 }
 .elisc_tm_title span{
 	width: 100%;
-	float: left;
+	float: left ;
 	font-weight: 500;
 	text-transform: uppercase;
 	display: inline-block;
