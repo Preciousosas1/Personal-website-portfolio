@@ -427,7 +427,7 @@ Precious Osazenaye is a  Frontend developer highly skilled at design systems
 </div>
 <div class="right">
 <div class="fields">
-<form onsubmit="sendEmail(); reset(); return false;"  >
+<form onsubmit=" sendEmail(); reset(); return false;" data-netlify= "true"  >
 <!-- <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div> -->
 <div class="empty_notice"><span>Please Fill Required Fields</span></div>
 <div class="first">
@@ -486,24 +486,6 @@ Shoot <span><img class="svg" src="img/svg/rightArrow.svg" alt /></span>
 </div>
 
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-    // SecureToken:" 1a2ea7af-d18b-4025-9376-1acdba7ef809",
-    Host : "smtp.elasticemail.com",
-    Username : "preciousosazenaye96@gmail.com",
-    Password : "DAE909F2E5D273C8F0F0AE1C275A41CE4B1A",
-    To : 'preciousosazenaye96@gmail.com',
-    From : document.getElemementById("email").value ,
-    Subject : "New Contact form message from my website",
-    Body : "Name"= document.getElementById("name").value
-    + "<br> Email:"+ document.getElementById("email").value
-    + "<br> Message:"+ document.getElementById("message").value
-}).then(
-  message => alert("Message Sent Successfully")
-);
-    }
-</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZEBVNMRHT"></script>
 <script>
