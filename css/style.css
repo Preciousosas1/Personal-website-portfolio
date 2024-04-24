@@ -364,8 +364,9 @@ body::-webkit-scrollbar-thumb {
   padding: 0px 20px;
 }
 .elisc_tm_topbar .logo img {
-  max-width: 100px;
-  max-height: 40px;
+  max-width: 120px;
+  max-height: 120px;
+  margin-left: -30px;
 }
 .elisc_tm_topbar .logo[data-type="image"] .image {
   display: inline-block;
