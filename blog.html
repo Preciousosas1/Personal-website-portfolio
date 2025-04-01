@@ -1,336 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="Precious Osazenaye, web developer, google developer">
-<meta name="author" content="precious">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="google-adsense-account" content="ca-pub-2468319309320596">
-
-<title>Precious Osazenaye</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kristi&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="icon" type="image/png" sizes="16x16" href="/img/logo/logo.png">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+ <meta name="keywords" content="">
+    <title>Remote,Part-time,fulltime jobs and scholarship Vacancies</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/img/logo/logo.png">
 
 </head>
 <body>
+    <header>
+        <h1>Latest Job Vacancies</h1>
+    </header>
 
-<div id="preloader">
-<div class="loader_line"></div>
-</div>
-
-
-<div class="elisc_tm_all_wrap" data-magic-cursor="show">
-<div class="dodo_tm_one_page_wrapper">
-<div class="bannner">
-    <img src="./img/blog banner.jpg" alt="blog banner" srcset="">
-</div>
-
-<div class="elisc_tm_topbar">
-    <div class="topbar_inner">
-    <div class="logo" data-type="image"> 
-    <a class="image" href="#"><img src="img/logo/logo.png" alt="logo image"/></a>
- 
-    </div>
-    <div class="trigger">
-    <div class="hamburger hamburger--slider">
-    <div class="hamburger-box">
-    <div class="hamburger-inner"></div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="elisc_tm_mobile_menu">
-    <div class="inner">
-    <div class="wrapper">
-    <div class="avatar">
-    <div class="image" data-img-url="img/about/1.jpg">
-    </div>
-    </div>
-    
-    <div class="menu_list">
-    <ul class="anchor_nav">
-        <div class="" >
-            <h3 style="font-size: 20px;">Other Articles </h3>
-            </div>
-    <li ><a href="#post 1" style="font-size: 13px; color: #130F49;">China Versus USA Technology</a></li>
-    <li><a href="#post 2" style="font-size: 13px;" > Can Fabric power electronics?</a></li>
-
-
-    </ul>
-    </div>
-    <div class="social">
-    <ul>
-        <li><a href="https://web.facebook.com/preciousosazenaye1" target="_blank"><i class="icon-facebook-1"></i></a></li>
-    <li><a href="https://github.com/Preciousosas1" target="_blank"><i class="icon-github-1"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/precious-osazenaye-06736a232/" target="_blank"><i class="icon-linkedin-1"></i></a></li>
-    <li><a href="https://www.instagram.com/techwithprecious/" target="_blank"><i class="icon-instagram-1"></i></a></li>
-    
-    
-    </ul>
-    </div>
-    <div class="copyright">
-    <p>Copyright &copy; 2023</p>
-    </div>
-    </div>
-    </div>
-    </div>
-
-                                  <!-- Big screen navbar -->
-<div class="elisc_tm_sidebar" style="padding-top: 70px;">
-    <div class="sidebar_inner">
-    <div class="author">
-     <div  >
-    <h3 style="font-size: 20px;">Other Articles </h3>
-    </div>
-    </div>
-    <div class="menu scrollable">
-    <ul class="anchor_nav" style="margin-top: -40%;">
-        <li><a href="#post 1" style="font-size: 16px;" > China Versus USA Technology</a></li>
-        <li><a href="#post 2" style="font-size: 16px;" > Can Fabric power electronics?</a></li>
-      
-    </ul>
-    </div>
-    <div class="copyright">
-    <div class="social">
-    <ul>
-    <li><a href="https://web.facebook.com/preciousosazenaye1" target="_blank"><i class="icon-facebook-1"></i></a></li>
-    
-    <li><a  width="20" height="20" src="" alt="share--v1"  target="_blank"><i class="icon-share-1"></i></a></li>
-
- <li title="Share this article"><a href="https://www.linkedin.com/in/precious-osazenaye-06736a232/" target="_blank" ><i class="icon-linkedin-1"></i></a></li>
- </ul>
-    </div>
-    <div class="text">
-    <p>© Precious Osazenaye. All rights reserved.</p>
-    </div>
-    </div>
-    </div>
+    <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Search jobs..." onkeyup="searchJobs()">
+        <select id="location-filter" onchange="searchJobs()">
+            <option value="">Filter by Location</option>
+            <option value="Lagos">Lagos</option>
+            <option value="California">California</option>
+            <!-- Add other locations here -->
+        </select>
+        <select id="job-type-filter" onchange="searchJobs()">
+            <option value="">Filter by Job Type</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Remote">Remote</option>
+            <option value="Remote">Scholarship</option>
+            <!-- Add other job types here -->
+        </select>
     </div>
 
 
-</div>
-</div>
-
-<!-- Main blog -->
-
-<div class="elisc_tm_mainpart">
-    <div class="mainpart_inner">
-
-<div id="post 1"> </div>
-<div style="padding-top: 10% ; padding-right: 16%;  padding-left: 5%;">
-<h2 style="padding: 0% 3%;"> Will China replace US in the tech market?</h2>
-<div  style="padding:3%; color: black; font-weight: 500;">
-<p style="padding: 2% 0%;">
-        In recent years, the global tech landscape has witnessed a monumental shift in power dynamics, 
-        with China's rapid rise in technological prowess sparking discussions about its potential to overshadow the United States as a dominant force in the industry. 
-        The question on many minds: Will China replace the US in the tech market?
-    </p>
-    <img src="./img/blog 1.jpg" style="height: 300px;width: 500px;" alt="china and usa">
-    <h5 style="padding: 2% 0%;">
-        China's Technological Ascendancy
-    </h5>
-
-    <p>
-        The ascent of China's tech industry has been nothing short of remarkable.
-         Fueled by a combination of massive investments in research and development, government support, 
-         a burgeoning talent pool, and a thriving ecosystem of startups, 
-        Chinese tech firms have made substantial strides in various technological domains.
-    </p>
-    <p style="padding: 2% 0%;">
-        Companies like Alibaba, Tencent, and Huawei have become household names not just in China but globally, 
-        showcasing innovation in e-commerce, social media, telecommunications, and beyond. Moreover, 
-        China has made significant advancements in emerging technologies such as artificial intelligence (AI),
-         5G, and quantum computing, positioning itself as a frontrunner in these cutting-edge fields.
-    </p>
-    <h5 style="padding: 2% 0%;">
-        Challenges and Opportunities  </h5>
-        <p>
-            While China's technological prowess is undeniable, several factors present
-             both challenges and opportunities for its potential to replace the US in the tech market.
-        </p>
-        <p style="padding: 2% 0%;">
-           <span style="color: #130F49; font-weight: 750;"> 1. Regulatory Environment:</span> The Chinese government's tight control and regulatory measures in the tech 
-            sector, aimed at ensuring security and compliance, 
-            could potentially stifle innovation and global expansion for Chinese companies.
-        </p>
-        <p>
-            <span style="color: #130F49; font-weight: 750;"> 2. Global Competition:</span>
-            The US maintains a stronghold in crucial areas of technology, 
-            particularly in software, semiconductors, and innovation hubs like Silicon Valley.
-             The competitive landscape remains robust, 
-            with American tech giants continuously pushing the boundaries of innovation.
-        </p>
-        <p  style="padding: 2% 0%;">
-            <span style="color: #130F49; font-weight: 750;"> 3.Intellectual Property Concerns:</span>
-             Intellectual property rights and concerns over data privacy 
-            remain contentious issues in China.
-             This poses challenges for international collaboration and trust in Chinese tech firms.
-        </p>
-        <p>
-            <span style="color: #130F49; font-weight: 750;"> 4.  Geopolitical Dynamics:</span>
-           Geopolitical tensions and trade disputes between the US and China have led to regulatory scrutiny,
-             export controls, and limitations on technology exchanges, impacting the global tech ecosystem.
-        </p>
-      
-            <h5  style="padding: 2% 0%;">The Road Ahead</h5>
-            <p>
-                Predicting whether China will outright replace the US in the tech market is a complex task.
-                 Both nations possess unique strengths, and their trajectories will likely be shaped by
-                  a multitude of factors, including geopolitical shifts,
-                 regulatory frameworks, technological breakthroughs, and global collaborations.
-            </p>
-            <img src="./img/blog 2.jpg" alt="striking a balance" style="height: 300px;width: 500px;">
-            <h5 style="padding: 2% 0%;">Collaboration and Competition: Striking a Balance</h5>
-            <p>
-                The future of the global tech market might not necessarily
-                 be a case of one country entirely replacing the other. Instead, a more probable scenario 
-                 involves a balance of collaboration and competition between the US and China.
-                  Partnerships in certain domains, combined with healthy competition,
-                 could lead to a symbiotic relationship, fostering innovation and technological advancements globally.
-            </p>
-            <h5 style="padding: 2% 0%;">The Importance of Global Cooperation</h5>
-            <p>
-                In an increasingly interconnected world, fostering global cooperation and fostering an 
-                environment conducive to innovation and technological advancements becomes paramount.
-                 International collaboration, knowledge-sharing, and the exchange of 
-                ideas between nations can propel the tech industry forward, benefiting societies worldwide.
-            </p>
-            <h5 style="padding: 2% 0%;"> Conclusion</h5>
-            <p>
-                The rise of China's tech industry undoubtedly poses a challenge to the 
-                traditional dominance of the US in the global tech market. However, outright replacement 
-                might not be the likely outcome. Instead, a dynamic landscape marked by competition, 
-                collaboration, and ongoing advancements on both fronts is more plausible.
-            </p>
-
-            <p>
-                The future of the tech market hinges not only on technological breakthroughs but also on how nations
-                 navigate regulatory frameworks, geopolitical dynamics, and the willingness to engage in meaningful
-                  global partnerships. Embracing diversity, fostering innovation, and promoting collaboration could
-                   pave the way for a vibrant and inclusive global tech ecosystem,
-                 where both China and the US play pivotal roles.
-            </p>
 
 
-</div>
+    <main id="blog-container">
+        <!-- Blog posts will load here -->
+    </main>
 
-<!-- Second post -->
-<div id="post 2"></div>
-<div style="padding: 10% 3%;color: black; font-weight: 500;">
-<h2 > Can Fabric Really Power Everyday Electronics?</h2>
-<p style="padding: 3% 0%;"> In the realm of technological innovation, the convergence of textiles and
-     electronics has sparked a wave of possibilities that once seemed confined to the 
-     realm of science fiction. The concept of fabric powering everyday electronics has emerged
-      as a tantalizing prospect, offering a glimpse into a future where our clothes could potentially
-     charge our devices or even serve as integrated electronic components.</p>
-     <h5>The Emergence of E-Textiles</h5>
-     <p>
-        E-textiles, also known as smart fabrics or electronic textiles, represent a fusion of traditional 
-        textiles and cutting-edge electronics. These innovative materials incorporate conductive fibers,
-         sensors, and other electronic components seamlessly woven into fabrics, 
-         enabling functionalities beyond conventional clothing.
-     </p>
-     <h5 style="padding: 3% 0%;">Power Generation within Fabric</h5>
-     <p>
-        The idea of fabric generating power for everyday electronics isn't as far-fetched as it 
-        may seem. Researchers have made significant strides
-         in developing fabric-based technologies that harness various methods for power generation:
-     </p>
-     <p  style="padding: 2% 0%;">
-        <span style="color: #130F49; font-weight: 750;">Triboelectric Effect:</span>
-         Fabrics can generate electricity through the triboelectric effect, 
-        where friction between different materials produces an electric charge. For instance, 
-        as fabric rubs against itself or other materials, it generates small amounts of electricity.
-    </p>
-    <p>
-        <span style="color: #130F49; font-weight: 750;">Energy-Harvesting Textiles:</span>  Certain textiles embedded with materials like piezoelectric 
-        fibers or photovoltaic yarns can convert mechanical energy
-         (from movement or light) into electrical energy, offering potential avenues for power generation.
-    </p>
-
-    <p  style="padding: 2% 0%;">
-        <span style="color: #130F49; font-weight: 750;">    Conductive Fibers and Yarns:</span> 
-     Conductive fibers and yarns incorporated into fabrics can 
-        serve as pathways for transmitting and storing energy, 
-        enabling the integration of power sources directly within the textile structure.
-     <img src="./img/blog 3.jpg" alt="Electronic fabrics"style="height: 300px;width: 500px;">
-     <h5>Applications and Potential Impact</h5>
-     <p>
-        The integration of power-generating
-         capabilities into fabric opens up a myriad of applications across various domains:
-     </p>
-
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-    <div class="lastz">
-        <div class="text ">
-            <p>© Precious Osazenaye. All rights reserved.</p>
-            </div>
-
-            <div>
-                <h2>Recent Articles</h2>
-            </div>
-
-            <!-- <div class="social">
-                <ul>
-                <li><a href="https://web.facebook.com/preciousosazenaye1" target="_blank"><i class="icon-facebook-1"></i></a></li>
-                <li><a href="https://github.com/Preciousosas1" target="_blank"><i class="icon-github-1"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/precious-osazenaye-06736a232/" target="_blank"><i class="icon-linkedin-1"></i></a></li>
-                <li><a href="https://www.instagram.com/techwithprecious/" target="_blank"><i class="icon-instagram-1"></i></a></li>
-                </ul>
-                </div> -->
-
-    </div>
-</footer>
-        </div>
-        </div>
-
-
-
-
-
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2468319309320596" 
- crossorigin="anonymous"></script>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JZEBVNMRHT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JZEBVNMRHT');
-</script>
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
-
+    <script src="./js/blog.js"></script>
 </body>
 </html>
