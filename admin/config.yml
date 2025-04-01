@@ -1,22 +1,19 @@
 backend:
   name: git-gateway
-  repo: Preciousosas1/Personal-website-portfolio
   branch: master
-  site_url: https://inquisitive-frangipane-72db7e.netlify.app/  # Update this!
+  site_url: https://inquisitive-frangipane-72db7e.netlify.app/ # Make sure this is correct!
 
-  logo_url: /admin/
-
-
-media_folder: "assets"  # This is where your images/media will be stored
-public_folder: "/assets"  # Public URL for media files
+media_folder: "assets/uploads"  # Stores images in "assets/uploads" inside your repository
+public_folder: "/assets/uploads" # This is the URL path for media files
 
 collections:
   - name: "posts"
     label: "Blog Posts"
-    folder: "posts"  # Where the Markdown files for blog posts are stored
-    create: true  # Allows you to create new blog posts
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Filename structure for posts
+    folder: "posts" # Ensure this folder exists in your repository
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" 
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+
