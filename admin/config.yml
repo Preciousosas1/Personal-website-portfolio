@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: your-github-username/your-repo-name # Replace with your GitHub repo details
+  name: git-gateway
+  repo: Preciousosas1/Personal-website-portfolio # Replace with your GitHub repo details
   branch: master # or master, depending on your branch name
 
 media_folder: "assets"  # This is where your images/media will be stored
