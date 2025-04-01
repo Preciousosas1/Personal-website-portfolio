@@ -1,7 +1,12 @@
 backend:
-  name: git-gateway
-  repo: Preciousosas1/Personal-website-portfolio # Replace with your GitHub repo details
-  branch: master # or master, depending on your branch name
+ backend:
+  name: github
+  repo: Preciousosas1/Personal-website-portfolio
+  branch: master
+  site_url: https://inquisitive-frangipane-72db7e.netlify.app/  # Update this!
+
+  logo_url: /admin/
+
 
 media_folder: "assets"  # This is where your images/media will be stored
 public_folder: "/assets"  # Public URL for media files
