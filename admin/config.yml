@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: your-github-username/your-repo-name # Replace with your GitHub repo details
-  branch: main # or master, depending on your branch name
+  branch: master # or master, depending on your branch name
 
 media_folder: "assets"  # This is where your images/media will be stored
 public_folder: "/assets"  # Public URL for media files
