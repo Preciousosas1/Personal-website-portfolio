@@ -29,11 +29,11 @@ ul {
 }
 :root {
   --main-color: #55527c;
-  --dark-color: #130f49;
+  --dark-color: #05023d;
   --yellow-color: #ff972d;
   --blue-color: #a5a6ff;
   --font-inter: "Inter", sans-serif;
-  --font-karla: "Karla", sans-serif;
+  --font-karla: "RegarnBlurDemoRegular-DYJGD", sans-serif;
   --font-kristi: "Kristi", cursive;
 }
 html {
@@ -658,6 +658,8 @@ body::-webkit-scrollbar-thumb {
   clear: both;
   float: left;
   background-color: #130f49;
+  background-image: url(/img/bg1.jpg);
+  background-size: cover;
   /* background-image: linear-gradient(to right, #132c610f , #7ce8c611); */
 }
 .elisc_tm_home .details {
