@@ -699,36 +699,21 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 40px;
 }
 
-                             /* DOWNLOAD RESUME PAGE BUTTON */
-
-.unique {
-  width: 100%;
-  height:auto;
-  margin-top: 50px;
-}
-.unique a{
-  margin-left: 95%;
-  color: white;
-  background-color: #130f49;
-  outline: none;
-  padding: 8px 12px;
-  font-size: 16px;
-  border-radius: 5px;
-}
 
 .elisc_tm_button {
   width: 100%;
   float: left;
 }
+
 .elisc_tm_button a {
   color: #130f49;
+  font-weight: 500;
   background-color: white;
   display: inline-block;
   border: 1.5px solid white;
   border-radius: 4px;
   padding: 9px 40px 9px 40px;
   white-space: nowrap;
-
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -752,7 +737,7 @@ body::-webkit-scrollbar-thumb {
   color: #55527c;
 }
 .elisc_tm_button[data-style="border"] a:hover {
-  background-color: #130f49;
+  background-color: #dc5ef5;
   color: rgba(255, 255, 255, 0.64);
 }
 .elisc_tm_button[data-position="center"] {
@@ -789,7 +774,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   content: "";
   width: 4px;
-  background-color: var(--yellow-color);
+  background-color: #dc5ef5;
   top: 0px;
   bottom: 0px;
 }
@@ -3010,9 +2995,6 @@ footer {
 }
 
 
-.unique {	width: 100%;margin-top: 50px;}
-.unique a{	margin-left: 90%;	padding: 8px 10px;}
-
 
 
 
@@ -3029,6 +3011,9 @@ footer {
   .elisc_tm_biography .text p {
     font-size: 16px;
   }
+  .elisc_tm_button{
+    width: 60%;
+  }
   .lastz {
     padding: 5%;
     font-size: 8px;
@@ -3036,9 +3021,6 @@ footer {
 }
 
 
-.unique {	width: 100%; margin-top: 50px;}
-  .unique a{ font-size: 13px;	margin-left: 68%;	padding: 8px 10px;}
 
-  @media (max-width: 400px) {
-	.unique a{ font-size: 12px;	margin-left: 64%;	padding: 5px 8px;}
-  }
+
+
